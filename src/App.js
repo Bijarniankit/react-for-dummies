@@ -1,29 +1,27 @@
 import './App.css';
-import React from 'react';
-// import User1 from './User1';
-// import User from './User';
-// import Userr from './Userr';
-// import Props from './Props_functional';
-import Props from './Props_class';
+import React,{useState} from 'react';
 
-/*Props class component  PROPS_CLASS */
-class App extends React.Component {
-    constructor(){
-      super();
-      this.state={
-      name:"Ankit"
-      }}
-   render() {
-      return(
-        <div className='App'>
-        <h1>Props in React App</h1>
-        <Props name={"Ankit" }  Email={"Rj@gmail.com"}/>
-        <Props name={this.state.name }  Email={"Rj@gmail.com"}/>
-        <button onClick={()=>this.setState({name:"sanjay"})}>Update</button>
-        <button onClick={()=>this.setState({name:"Ankit"})}>Update 2</button>
-        </div>
-      );
-    }
+
+function App() {
+  
+  const [data, setData]=useState("Start Typing");
+  const [print, setPrint]=useState(false);
+
+  function getData(value) {
+    console.warn(value.target.value);
+    setData(value.target.value);
+    setPrint(false);
+  }
+
+  return (
+    <div className="App">
+      <h1>React App</h1>
+      { print ? <h3>{data}</h3> :null}
+      <input type="text" placeholder="Enter your name" onChange={getData} />
+      <button onClick={()=>{setPrint(true)}} > Print </button>
+    </div>
+  );
 }
+
 
 export default App;
