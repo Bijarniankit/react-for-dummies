@@ -1,25 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+// import User1 from './User1';
+// import User from './User';
+// import Userr from './Userr';
+// import Props from './Props_functional';
+import Props from './Props_class';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  //Props functional component  PROPS_FUNCTIONAL
+    // const [name, setName] = useState("Ankit");
+    // const updatestate = () => {
+    //  setName("Bandana");
+    // }
+  
+    //  return (
+    //     <div className="App">
+    //       <h1> Props in React App </h1>
+    //       <Props name={name} Email={"Raj@raj.com"} other={{address:'india' }}/>      
+    //       <Props name={"bandana"} Email={"Raj@raj.com"} other={{address:'india' }} />      
+    //       <Props name={"pulkit"} Email={"Raj@raj.com"} other={{address:'india' }}/>       
+    //       <button onClick={updatestate}> Update </button>
+    //     </div>
+    //   );
+
+
 }
 
 export default App;
