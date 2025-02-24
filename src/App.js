@@ -1,43 +1,13 @@
-import './App.css';
-import React from 'react';
-import User from './components/User_render';
-
-// class App extends React.Component{
-//     constructor(){
-//         super();
-//         this.state={
-//         data:"Yolo"
-//         }
-//        }
-
-//     render(){
-//         return (
-//             <div className="App">
-//                 <h1>Life cycle method by using class</h1>
-//                 <h2>{this.state.data}</h2>
-//             </div>
-//         );
-//     }
-// }
+import './App.css'
+import React from 'react'
 
 function App() {
-    // const[name,setname]=React.useState("Ankit"); 
     return (
         <div className="App">
-            <h1>Render method in react</h1>
-            {/* <User name={name}/> */}
-
-            <User />
-
-            {/* <button onClick={()=>setname("Bijarnia")} > Update name </button> */}
-
-
+            <h1>Hooks</h1>
         </div>
-    );
 
+    )
 }
 
-
-
-
-export default App;
+export default App
