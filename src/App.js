@@ -1,18 +1,17 @@
 import './App.css'
-import React, { useState } from 'react'
-import User from './components/User_lifecycle'
+import './Style.css'
+import style from './custom.module.css'
 
-function App() {
+import React from 'react'
 
-    const [data, setData] = useState(1)
-    const [count, setCount] = useState(10)
+function App(){
 
-    return (
-        <div className="App" >
-            <h1> Hooks useEffect </h1>
-            <User data={data} count={count} />
-            <button onClick={() => { setData(data + 1) }}>Update Data</button>
-            <button onClick={() => { setCount(count + 1) }}>Update Count</button>
+    return(
+        <div className="App">
+            <h1 className="primary">Style 1 in Reactjs</h1>
+            <h1 style={{backgroundColor:'yellow',color:'red'}}>Style 2 in Reactjs</h1>
+            <h1 className={style.success}>Style 3 in Reactjs</h1>
+      
         </div>
     )
 }
