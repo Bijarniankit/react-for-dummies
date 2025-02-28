@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2px;
+}
+
+.student-table, .student-table th, .student-table td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+span{
+  color: red;
+  margin-left:50px ;
+}
