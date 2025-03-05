@@ -1,0 +1,21 @@
+.navbar-ul {
+  text-align: right; 
+}
+
+.navbar-ul li {
+  display: inline-block ;
+  padding: 10px 50px 
+}
+
+.nav-bar-link {
+  color: black ;
+  
+}
+
+.nav-bar-link:hover {
+  color: fuchsia 
+}
+
+.navbar-ul .active {
+ color: yellow;
+}
